@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #1c3027;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 极轻盈的斜向渐变：几乎接近纯白，只带一丝暖意，
+     两抹极淡的日落橙 / 湖蓝晕染点缀，通透有呼吸感 */
+  background-color: #fffefc;
+  background-image:
+    radial-gradient(1200px 560px at 86% -12%, rgba(221, 143, 87, 0.035), transparent 64%),
+    radial-gradient(1000px 540px at 6% 0%, rgba(79, 129, 138, 0.03), transparent 60%),
+    linear-gradient(160deg, #ffffff 0%, #fefcf9 55%, #fbf7f1 100%);
+  background-attachment: fixed;
+}
+
+/* 旅行杂志感标题：略微收紧字距 */
+.font-display {
+  letter-spacing: -0.01em;
+}
+
+/* 细腻的滚动条，贴合专业工作台风格 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0d3bd;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
